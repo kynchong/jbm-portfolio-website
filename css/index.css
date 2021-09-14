@@ -1,3 +1,8 @@
+/* GLOBAL */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
 /* MEDIA QUERIES ------------------------------ */
 /* Tablets */
 @media screen and (max-width: 1200px) {
@@ -111,7 +116,6 @@ nav {
 /* Main */
 main {
     padding-top: 4rem;
-    background-color: #eee;
 }
 
 #main-content {
@@ -142,9 +146,9 @@ main {
 .main-gallery-col li {
     position: relative;
     box-sizing: border-box;
-    border: 1px solid black;
+    padding: 20px;
     margin-bottom: 10px;
-
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     width: 100%;
     overflow: hidden;
 }
@@ -157,13 +161,12 @@ main {
 .main-gallery-col li a {
     position: absolute;
     display: block;
-    top: -20px;
+    top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-
     padding: 10px 0;
-
+    
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -173,15 +176,15 @@ main {
     transition: 0.25s;
 }
 
+.main-gallery-col li:hover {
+    transform: scale(105%, 105%);
+    transition: 0.4s;
+}
+
 .main-gallery-col li a:hover {
-    transition: 0.1s;
-    top: 0px;
-
-    border: 10px solid blue;
-    box-sizing: border-box;
-
+    transition: 0.15s;
     opacity: 1;
-    background-color: rgba(0,0,0,0.60);
+    background-color: rgba(0,0,0,0.50);
 }
 
 
